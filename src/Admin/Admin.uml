@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_BloRQFP9Eeyk95tSRrXE_A" name="Admin">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_BwTQMFP9Eeyk95tSRrXE_A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_RPErUFP9Eeyk95tSRrXE_A" name="Admin">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_VbEKoFP9Eeyk95tSRrXE_A" name="Administrateur"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_n4FfkFP9Eeyk95tSRrXE_A" name="CyberCar Admin" useCase="_iFYrsFP-Eeyk95tSRrXE_A _lQ4-YFP-Eeyk95tSRrXE_A _t9zrMFP-Eeyk95tSRrXE_A _dv-goFpfEeypkpum-XNxZw">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_cTmIsFP9Eeyk95tSRrXE_A" name="Visualiser le stock"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_iFYrsFP-Eeyk95tSRrXE_A" name="Page RH" subject="_n4FfkFP9Eeyk95tSRrXE_A"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_lQ4-YFP-Eeyk95tSRrXE_A" name="Page Comptabilité" subject="_n4FfkFP9Eeyk95tSRrXE_A"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_t9zrMFP-Eeyk95tSRrXE_A" name="Page Vendeur" subject="_n4FfkFP9Eeyk95tSRrXE_A"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_dv-goFpfEeypkpum-XNxZw" name="Modifier le stock" subject="_n4FfkFP9Eeyk95tSRrXE_A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ybmsMFP-Eeyk95tSRrXE_A" memberEnd="_ybxrUFP-Eeyk95tSRrXE_A _yby5cFP-Eeyk95tSRrXE_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ybv2IFP-Eeyk95tSRrXE_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ybwdMFP-Eeyk95tSRrXE_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ybxrUFP-Eeyk95tSRrXE_A" name="création d'utilisateur" type="_cTmIsFP9Eeyk95tSRrXE_A" association="_ybmsMFP-Eeyk95tSRrXE_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yby5cFP-Eeyk95tSRrXE_A" name="utilisateur" type="_VbEKoFP9Eeyk95tSRrXE_A" association="_ybmsMFP-Eeyk95tSRrXE_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3cQioFP-Eeyk95tSRrXE_A" memberEnd="_3cRJslP-Eeyk95tSRrXE_A _3cRwwFP-Eeyk95tSRrXE_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3cRJsFP-Eeyk95tSRrXE_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3cRJsVP-Eeyk95tSRrXE_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3cRJslP-Eeyk95tSRrXE_A" name="page rh" type="_iFYrsFP-Eeyk95tSRrXE_A" association="_3cQioFP-Eeyk95tSRrXE_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3cRwwFP-Eeyk95tSRrXE_A" name="utilisateur" type="_VbEKoFP9Eeyk95tSRrXE_A" association="_3cQioFP-Eeyk95tSRrXE_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_40zC4FP-Eeyk95tSRrXE_A" memberEnd="_400RAVP-Eeyk95tSRrXE_A _4004EFP-Eeyk95tSRrXE_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_40zp8FP-Eeyk95tSRrXE_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_400RAFP-Eeyk95tSRrXE_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_400RAVP-Eeyk95tSRrXE_A" name="page comptabilité" type="_lQ4-YFP-Eeyk95tSRrXE_A" association="_40zC4FP-Eeyk95tSRrXE_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4004EFP-Eeyk95tSRrXE_A" name="utilisateur" type="_VbEKoFP9Eeyk95tSRrXE_A" association="_40zC4FP-Eeyk95tSRrXE_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5zs7IFP-Eeyk95tSRrXE_A" memberEnd="_5zuJQVP-Eeyk95tSRrXE_A _5zuwUFP-Eeyk95tSRrXE_A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5ztiMFP-Eeyk95tSRrXE_A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5zuJQFP-Eeyk95tSRrXE_A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5zuJQVP-Eeyk95tSRrXE_A" name="page vendeur" type="_t9zrMFP-Eeyk95tSRrXE_A" association="_5zs7IFP-Eeyk95tSRrXE_A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5zuwUFP-Eeyk95tSRrXE_A" name="utilisateur" type="_VbEKoFP9Eeyk95tSRrXE_A" association="_5zs7IFP-Eeyk95tSRrXE_A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uL_AEFpfEeypkpum-XNxZw" memberEnd="_uMCDYFpfEeypkpum-XNxZw _uMCqcFpfEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uMBcUFpfEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uMBcUVpfEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uMCDYFpfEeypkpum-XNxZw" name="modifier le stock" type="_dv-goFpfEeypkpum-XNxZw" association="_uL_AEFpfEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uMCqcFpfEeypkpum-XNxZw" type="_VbEKoFP9Eeyk95tSRrXE_A" association="_uL_AEFpfEeypkpum-XNxZw"/>
+  </packagedElement>
+</uml:Model>
