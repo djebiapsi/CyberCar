@@ -226,7 +226,7 @@ public class CreateUser {
 						emails.add(rS.getString(1));;// Recupere les emails existant
 					}
 					System.out.println(emails);
-					String email = textEmail.getText();
+					String email = textEmail.getText().toLowerCase();
 					for (String emailt : emails) {
 						
 						if (emailt.toLowerCase().equals(email.toLowerCase()) ) {
