@@ -4,6 +4,8 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.awt.List;
 
@@ -231,7 +233,7 @@ public class CreateUser {
 						
 						if (emailt.toLowerCase().equals(email.toLowerCase()) ) {
 							save = false;
-							System.out.println("Email existe déjà");
+							JOptionPane.showMessageDialog(null, "Email existe déjà");
 						}
 				
 					}
@@ -268,21 +270,21 @@ public class CreateUser {
 				String DDN = textDDN.getText();
 					 
 				 if(!check(DDN, "yyyy-MM-dd")) {
-					 System.out.println("Format date invalide");
+					 JOptionPane.showMessageDialog(null, "Format date invalide");
 					 save = false;
 				 }
 				
 				 String nom = textNom.getText();
 				 
 				 if (nom.length() > 20) {
-					System.out.println("Nom Trop long");
+					 JOptionPane.showMessageDialog(null, "Nom Trop long");
 					save = false;
 				}
 				 
 				String tel = textNDT.getText();
 				
 				if (tel.length() > 15) {
-						System.out.println("Nom Trop long");
+					JOptionPane.showMessageDialog(null, "Numéro Trop long");
 						save = false;
 				}
 				 
@@ -315,7 +317,7 @@ public class CreateUser {
 						System.out.println("ok");
 						st.execute("INSERT INTO `user_detail`(`id`, `name`, `birthdate`, `tel_num`, `address`, `salary`) VALUES ('"+id+"','"+nom+"','"+DDN+"','"+tel+"','"+adresse+"','"+salary+"')");
 						
-						System.out.println("save");
+						JOptionPane.showMessageDialog(null, "Utilisateur sauvgardé.");
 					
 					} catch (SQLException e1) {
 						// TODO Auto-generated catch block
