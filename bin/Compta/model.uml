@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_JpaeMFpjEeypkpum-XNxZw" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_JqZVoFpjEeypkpum-XNxZw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_K6KUYFpjEeypkpum-XNxZw" name="Compta">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_NjXyUFpjEeypkpum-XNxZw" name="admin"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_T9bEoFpjEeypkpum-XNxZw" name="Compta"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_dOSzEFpjEeypkpum-XNxZw" name="CyberCar Compta" useCase="_hmlB8FpjEeypkpum-XNxZw _nOhh4FpjEeypkpum-XNxZw _NUl6AFpkEeypkpum-XNxZw">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_hmlB8FpjEeypkpum-XNxZw" name="Visualiser les commandes" subject="_dOSzEFpjEeypkpum-XNxZw"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_nOhh4FpjEeypkpum-XNxZw" name="Voir les comissions" subject="_dOSzEFpjEeypkpum-XNxZw"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_NUl6AFpkEeypkpum-XNxZw" name="Envoie des fiches de paye" subject="_dOSzEFpjEeypkpum-XNxZw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZpokEFpkEeypkpum-XNxZw" memberEnd="_ZppLIlpkEeypkpum-XNxZw _ZppLI1pkEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZppLIFpkEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZppLIVpkEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZppLIlpkEeypkpum-XNxZw" name="visualiser les commandes" type="_hmlB8FpjEeypkpum-XNxZw" association="_ZpokEFpkEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ZppLI1pkEeypkpum-XNxZw" name="admin" type="_NjXyUFpjEeypkpum-XNxZw" association="_ZpokEFpkEeypkpum-XNxZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bLW1gFpkEeypkpum-XNxZw" memberEnd="_bLXcklpkEeypkpum-XNxZw _bLYDoFpkEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bLXckFpkEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bLXckVpkEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bLXcklpkEeypkpum-XNxZw" name="voir les comissions" type="_nOhh4FpjEeypkpum-XNxZw" association="_bLW1gFpkEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bLYDoFpkEeypkpum-XNxZw" name="admin" type="_NjXyUFpjEeypkpum-XNxZw" association="_bLW1gFpkEeypkpum-XNxZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cJOzAFpkEeypkpum-XNxZw" memberEnd="_cJPaElpkEeypkpum-XNxZw _cJPaE1pkEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cJPaEFpkEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cJPaEVpkEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cJPaElpkEeypkpum-XNxZw" name="visualiser les commandes" type="_dOSzEFpjEeypkpum-XNxZw" association="_cJOzAFpkEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cJPaE1pkEeypkpum-XNxZw" name="compta" type="_T9bEoFpjEeypkpum-XNxZw" association="_cJOzAFpkEeypkpum-XNxZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dALCEFpkEeypkpum-XNxZw" memberEnd="_dALpIlpkEeypkpum-XNxZw _dALpI1pkEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dALpIFpkEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dALpIVpkEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dALpIlpkEeypkpum-XNxZw" name="voir les comissions" type="_nOhh4FpjEeypkpum-XNxZw" association="_dALCEFpkEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dALpI1pkEeypkpum-XNxZw" name="compta" type="_T9bEoFpjEeypkpum-XNxZw" association="_dALCEFpkEeypkpum-XNxZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dsn4YFpkEeypkpum-XNxZw" memberEnd="_dsofclpkEeypkpum-XNxZw _dspGgFpkEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dsofcFpkEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dsofcVpkEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dsofclpkEeypkpum-XNxZw" name="envoie des fiches de paye" type="_NUl6AFpkEeypkpum-XNxZw" association="_dsn4YFpkEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dspGgFpkEeypkpum-XNxZw" name="compta" type="_T9bEoFpjEeypkpum-XNxZw" association="_dsn4YFpkEeypkpum-XNxZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hzXEQFpkEeypkpum-XNxZw" memberEnd="_hzXrUlpkEeypkpum-XNxZw _hzYSYFpkEeypkpum-XNxZw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hzXrUFpkEeypkpum-XNxZw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hzXrUVpkEeypkpum-XNxZw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hzXrUlpkEeypkpum-XNxZw" name="envoie des fiches de paye" type="_NUl6AFpkEeypkpum-XNxZw" association="_hzXEQFpkEeypkpum-XNxZw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hzYSYFpkEeypkpum-XNxZw" name="admin" type="_NjXyUFpjEeypkpum-XNxZw" association="_hzXEQFpkEeypkpum-XNxZw"/>
+  </packagedElement>
+</uml:Model>

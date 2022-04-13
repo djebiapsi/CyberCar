@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_BDD-UFphEeypkpum-XNxZw" name="Compta">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_BExOgFphEeypkpum-XNxZw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_IK91IFphEeypkpum-XNxZw" name="Compta">
+    <packagedElement xmi:type="uml:Class" xmi:id="_IK91IVphEeypkpum-XNxZw" name=" Admin" visibility="package">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91IlphEeypkpum-XNxZw" name="id" visibility="private" aggregation="shared">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91I1phEeypkpum-XNxZw" name="email" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IK91JFphEeypkpum-XNxZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IK91JVphEeypkpum-XNxZw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91JlphEeypkpum-XNxZw" name="nom" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91J1phEeypkpum-XNxZw" name="datNaissance" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91KFphEeypkpum-XNxZw" name="numTel" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91KVphEeypkpum-XNxZw" name="adresse" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91KlphEeypkpum-XNxZw" name="salaire" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IK91K1phEeypkpum-XNxZw" name="role" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91LFphEeypkpum-XNxZw" name="Admin" concurrency="concurrent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91LVphEeypkpum-XNxZw" name="Admin">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91LlphEeypkpum-XNxZw" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91L1phEeypkpum-XNxZw" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91MFphEeypkpum-XNxZw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91MVphEeypkpum-XNxZw" name="dateNaissance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91MlphEeypkpum-XNxZw" name="numTel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91M1phEeypkpum-XNxZw" name="adresse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91NFphEeypkpum-XNxZw" name="Admin" concurrency="concurrent">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91NVphEeypkpum-XNxZw" name="email" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91NlphEeypkpum-XNxZw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91N1phEeypkpum-XNxZw" name="dateNaissance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91OFphEeypkpum-XNxZw" name="numTel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91OVphEeypkpum-XNxZw" name="adresse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91OlphEeypkpum-XNxZw" name="getId"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91O1phEeypkpum-XNxZw" name="setEmail">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91PFphEeypkpum-XNxZw" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91PVphEeypkpum-XNxZw" name="getEmail"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91PlphEeypkpum-XNxZw" name="setNom">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91P1phEeypkpum-XNxZw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91QFphEeypkpum-XNxZw" name="getNom"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91QVphEeypkpum-XNxZw" name="setDateNaissance">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91QlphEeypkpum-XNxZw" name="dateNaissance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91Q1phEeypkpum-XNxZw" name="getDateNaissance"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91RFphEeypkpum-XNxZw" name="setNumTel">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91RVphEeypkpum-XNxZw" name="numTel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91RlphEeypkpum-XNxZw" name="getNumTel"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91R1phEeypkpum-XNxZw" name="setAdresse" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91SFphEeypkpum-XNxZw" name="adresse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91SVphEeypkpum-XNxZw" name="getAdresse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91SlphEeypkpum-XNxZw" name="setSalaire" concurrency="concurrent">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91S1phEeypkpum-XNxZw" name="salaire">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91TFphEeypkpum-XNxZw" name="getSalaire"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91TVphEeypkpum-XNxZw" name="setRole">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IK91TlphEeypkpum-XNxZw" name="role">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_IK91T1phEeypkpum-XNxZw" name="getRole"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q9bwUFphEeypkpum-XNxZw" name="Compta">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0c34FphEeypkpum-XNxZw" name="datNaissance" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0fUIFphEeypkpum-XNxZw" name="nom" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0giQFphEeypkpum-XNxZw" name="id" visibility="private" aggregation="shared">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0iXcFphEeypkpum-XNxZw" name="role" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0jlkFphEeypkpum-XNxZw" name="salaire" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0mB0FphEeypkpum-XNxZw" name="adresse" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0pFIFphEeypkpum-XNxZw" name="email" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R0pFIVphEeypkpum-XNxZw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R0pFIlphEeypkpum-XNxZw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R0sIcFphEeypkpum-XNxZw" name="numTel" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXbC8FphEeypkpum-XNxZw" name="Compta" concurrency="concurrent"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXKkQFphEeypkpum-XNxZw" name="Compta" concurrency="concurrent">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXKkQVphEeypkpum-XNxZw" name="email" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXKkQlphEeypkpum-XNxZw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXKkQ1phEeypkpum-XNxZw" name="dateNaissance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXKkRFphEeypkpum-XNxZw" name="numTel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXKkRVphEeypkpum-XNxZw" name="adresse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bW9v8FphEeypkpum-XNxZw" name="Compta">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW9v8VphEeypkpum-XNxZw" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW9v8lphEeypkpum-XNxZw" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW9v81phEeypkpum-XNxZw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW9v9FphEeypkpum-XNxZw" name="dateNaissance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW9v9VphEeypkpum-XNxZw" name="numTel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW9v9lphEeypkpum-XNxZw" name="adresse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXOOoFphEeypkpum-XNxZw" name="getId"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bW76wFphEeypkpum-XNxZw" name="setEmail">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW76wVphEeypkpum-XNxZw" name="email">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXhwoFphEeypkpum-XNxZw" name="getEmail"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bW_lIFphEeypkpum-XNxZw" name="setNom">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bW_lIVphEeypkpum-XNxZw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXeGQFphEeypkpum-XNxZw" name="getNom"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXBaUFphEeypkpum-XNxZw" name="setDateNaissance">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXBaUVphEeypkpum-XNxZw" name="dateNaissance">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXVjYFphEeypkpum-XNxZw" name="getDateNaissance"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXD2kFphEeypkpum-XNxZw" name="setSalaire" concurrency="concurrent">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXD2kVphEeypkpum-XNxZw" name="salaire">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXR5AFphEeypkpum-XNxZw" name="getSalaire"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXIIAFphEeypkpum-XNxZw" name="setNumTel">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXIIAVphEeypkpum-XNxZw" name="numTel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXkz8FphEeypkpum-XNxZw" name="getNumTel"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXrhoFphEeypkpum-XNxZw" name="setAdresse" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXrhoVphEeypkpum-XNxZw" name="adresse">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXX_oFphEeypkpum-XNxZw" name="getAdresse"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXvMAFphEeypkpum-XNxZw" name="setRole">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_bXvMAVphEeypkpum-XNxZw" name="role">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bXoeUFphEeypkpum-XNxZw" name="getRole"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
