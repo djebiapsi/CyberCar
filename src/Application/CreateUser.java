@@ -66,7 +66,9 @@ public class CreateUser {
 	}
 	
 	/**
-	 * fonction de hashage 
+	 * Fonction de hashage : prend en entrée le text a hasher ainsi que l'algorithme de  hashage
+	 * et retourne le texte hashé.
+	 * 
 	 * @param text
 	 * @param algo
 	 * @return text hasher
@@ -88,10 +90,12 @@ public class CreateUser {
 	}
 	
 	/**
-	 * 
+	 * Fonction de vérification du format de la date : prend en entrée une date en format
+	 * String ainsi que le format de la date voulu exemple "YYYY-MM-dd" et retourne
+	 * True si la date est conforme er False si la date n'est pas conforme
 	 * @param date
 	 * @param pattern
-	 * @return True si date conforme
+	 * @return True si date conforme/False si date non conforme
 	 */
 	public static boolean check(String date, String pattern) {
 		try {
@@ -231,7 +235,7 @@ public class CreateUser {
 					String email = textEmail.getText().toLowerCase();
 					for (String emailt : emails) {
 						
-						if (emailt.toLowerCase().equals(email.toLowerCase()) ) {
+						if (emailt.equalsIgnoreCase(email) ) {
 							save = false;
 							JOptionPane.showMessageDialog(null, "Email existe déjà");
 						}
@@ -241,7 +245,7 @@ public class CreateUser {
 					
 				} catch (Exception e2) {
 					// TODO: handle exception
-					System.out.println(e2);
+					System.err.println(e2);
 				}
 				
 				
