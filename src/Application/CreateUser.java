@@ -219,7 +219,8 @@ public class CreateUser {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					
 					// Connection à la base de donnée
-					connect = DriverManager.getConnection("jdbc:mysql://localhost/cybercar", "root", "");
+					String passwordDb = System.getProperty("database.password");
+					connect = DriverManager.getConnection("jdbc:mysql://localhost/cybercar", "root", passwordDb);
 					st = connect.createStatement();
 
 					// Récupération des mails
@@ -267,7 +268,7 @@ public class CreateUser {
 				Pattern pattern = Pattern.compile(regex);
 				Matcher matcher = pattern.matcher(email);
 				 if(!matcher.matches()) {
-					 System.out.println("false Email");
+					 JOptionPane.showMessageDialog(null, "Format email invalide");
 					 save = false;
 				 }
 				 
@@ -295,8 +296,7 @@ public class CreateUser {
 				String adresse = textAdresse.getText();
 				String [] dpts = {"Vendeur", "Comptabilité", "RH", "Admin"};
 				String dpt = dpts[comboBox.getSelectedIndex()];
-				//System.out.println(dpt);
-				 
+				
 				 if (save) {
 					String password = "12345678";
 					
@@ -306,7 +306,8 @@ public class CreateUser {
 					
 
 					try {
-						connect = DriverManager.getConnection("jdbc:mysql://localhost/CyberCar", "root", "");
+						String passwordDb = System.getProperty("database.password");
+						connect = DriverManager.getConnection("jdbc:mysql://localhost/CyberCar", "root", passwordDb);
 						st = connect.createStatement();
 						
 						st.execute("INSERT INTO `user`(`email`, `password`, `roles`, `dept`) VALUES ('"+ email +"','"+ password+"','1','"+dpt+"')");
@@ -325,7 +326,9 @@ public class CreateUser {
 					
 					} catch (SQLException e1) {
 						// TODO Auto-generated catch block
-						System.out.println(e1);
+						System.err.println(e1);
+					}finally {
+						
 					}
 					
 					
